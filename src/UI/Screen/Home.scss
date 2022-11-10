@@ -1,0 +1,22 @@
+.home {
+  color: white;
+  font-family: 'NormandyBeach';
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 78px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    span {
+      background: linear-gradient(180deg, yellow, orange, red);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

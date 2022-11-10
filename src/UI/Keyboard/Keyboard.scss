@@ -1,0 +1,109 @@
+.keyboard {
+  height: 30%;
+  background: linear-gradient(to right, #5e1d51, #654392);
+  width: 80rem;
+  margin: 0 auto;
+  transform: perspective(170px) rotateX(10deg);
+  margin-top: -2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .right_panel {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    height: 90%;
+    align-items: center;
+    width: 30rem;
+    &-top {
+      justify-content: flex-end;
+      height: 90%;
+      gap: 5px;
+      .circle_base,
+      .button {
+        background-color: rgb(242, 2, 242);
+      }
+    }
+    &-bottom {
+      height: 90%;
+      gap: 5px;
+      justify-content: flex-start;
+    }
+    & > * {
+      transform: rotateY(20deg);
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .circle_base {
+    width: 9rem;
+    height: 9rem;
+    background-color: #ffe700;
+    border-radius: 50%;
+    position: relative;
+    .button {
+      width: 6.5rem;
+      height: 6.5rem;
+      color: rgba(0, 0, 0, 0.338);
+      border-radius: 50%;
+      font-size: 10px;
+      box-shadow: 2px 2px 10px grey;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      text-align: center;
+      &:active {
+        transform: translate(-50%, -47%) scale(0.95);
+      }
+    }
+  }
+}
+.left_panel {
+  width: 20rem;
+  margin-left: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.joystick {
+  width: 10rem;
+  height: 10rem;
+  &-base {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(64, 64, 64), rgb(71, 71, 71));
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-stick {
+    height: 10rem;
+    width: 2rem;
+    background-color: silver;
+    position: absolute;
+    transform: translateY(-50%);
+    
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0px 5px 5px black;
+  }
+  &-ball {
+    width: 10rem;
+    height: 10rem;
+    background: linear-gradient(rgb(64, 64, 64), rgb(71, 71, 71));
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    z-index: 202;
+    transform: translate(-50%, -50%);
+    box-shadow: inset -25px -25px 40px rgba(0, 0, 0, 0.5);
+  }
+}
