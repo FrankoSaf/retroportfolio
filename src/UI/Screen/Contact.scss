@@ -3,44 +3,140 @@
   margin: 0 auto;
   height: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
+  h2 {
+    text-align: center;
+    max-width: 40ch;
+    color: #ffe700;
+  }
   .form {
-    height: 50%;
+    height: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    // justify-content: space-between;
+
     & > div {
       position: relative;
       height: 4rem;
-      width: 30rem;
+      width: 50rem;
       background: white;
-      z-index: -10;
+      z-index: 10;
+      margin-bottom: 20px;
       label {
         position: absolute;
         transition: all 0.5s;
         z-index: -2;
+        left: 10px;
         transform: translateY(50%);
       }
       input {
         display: inline-block;
+        font-family: 'Press Start 2P', cursive;
         width: 100%;
         height: 100%;
         position: absolute;
         z-index: 20;
         background: transparent;
-        border: rgb(185, 2, 185) solid 3px;
+        border: none;
+        outline: none;
+        &:focus {
+          border: rgb(185, 2, 185) solid 5px;
+        }
+        &:focus + label {
+          transform: translateY(-15px);
+          color: white;
+        }
       }
-      input:active + label {
-        transform: translateY(-50%);
-        font-size: 2px;
-      }
+    }
+    .message_container {
+      height: 30rem !important;
     }
     textarea {
+      font-family: 'Press Start 2P', cursive;
       width: 100%;
       height: 100%;
+      z-index: 20;
+      position: absolute;
       background: transparent;
+      outline: none;
+      padding: 3px;
+      &:focus {
+        border: rgb(185, 2, 185) solid 5px;
+      }
+      &::placeholder {
+        padding: 5px;
+        color: black;
+      }
     }
+  }
+}
+
+.form button {
+  position: relative;
+  display: block;
+  background: none;
+  color: white;
+  font-family: inherit;
+  border: none;
+  width: 10rem;
+  height: 5rem;
+  overflow: hidden;
+  &:focus {
+    outline: none;
+  }
+  &:hover,
+  &:focus {
+    .left {
+      transform: translateY(-100%);
+      transition: transform 0.2s 0.6s;
+    }
+    .right {
+      transform: translateY(100%);
+      transition: transform 0.2s 0.2s;
+    }
+    .top {
+      transform: translateX(100%);
+      transition: transform 0.2s;
+    }
+    .bottom {
+      transform: translateX(-100%);
+      transition: transform 0.2s 0.4s;
+    }
+  }
+  span {
+    transition: all 1s;
+    position: absolute;
+    display: block;
+    background-color: #ffe700;
+  }
+  .top,
+  .bottom {
+    height: 1rem;
+    width: 100%;
+  }
+  .left,
+  .right {
+    height: 100%;
+    width: 1rem;
+    background: #ffe700;
+  }
+  .top {
+    top: 0;
+    left: -100%;
+  }
+  .bottom {
+    bottom: 0;
+    left: 100%;
+  }
+  .left {
+    left: 0;
+    bottom: -100%;
+  }
+  .right {
+    right: 0;
+    top: -100%;
   }
 }
