@@ -18,15 +18,15 @@
     background: linear-gradient(180deg, yellow, orange, red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    margin-bottom: 2rem;
     margin-top: 2rem;
   }
   text-align: center;
   p {
     max-width: 50ch;
     color: white;
-    line-height: 20px;
+    line-height: 2rem;
     margin: 0 auto;
   }
 }
@@ -36,7 +36,7 @@
 
   .icons {
     width: 33%;
-    margin-top: 20px;
+    margin-top: 2rem;
   }
   img {
     width: 6rem;

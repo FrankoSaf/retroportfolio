@@ -1,4 +1,5 @@
 import { useContext, useEffect } from 'react';
+import Footer from './components/Footer/Footer';
 import Keyboard from './components/Keyboard/Keyboard';
 import Monitor from './components/Screen/Monitor';
 import { ScreenContext } from './store/ScreenContext';
@@ -17,6 +18,7 @@ function App() {
     <>
       <Monitor />
       <Keyboard />
+      <Footer />
     </>
   );
 }

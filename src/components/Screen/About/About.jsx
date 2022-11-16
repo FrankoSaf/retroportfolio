@@ -40,9 +40,9 @@ const About = () => {
           ))}
         </div>
       </div>
-      <div style={{ marginBottom: '40px' }}>
+      <div style={{ marginBottom: '4rem' }}>
         <h3 style={{ marginTop: '10rem' }}>Future Skills:</h3>
-        <p style={{ margin: '30px auto' }}>
+        <p style={{ margin: '3rem auto' }}>
           These are the skills I want to learn:{' '}
         </p>
         <div className='icons-container'>
