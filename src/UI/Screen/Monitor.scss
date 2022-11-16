@@ -1,7 +1,7 @@
 .screen_container {
   width: 70rem;
   margin: 0 auto;
-  height: 70%;
+  height: 65%;
   background-color: black;
   display: grid;
   grid-template-columns: 2rem 1fr 2rem;
@@ -20,10 +20,8 @@
   font-size: 5rem;
   width: 100%;
   height: 13rem;
-  z-index: 200;
   border-right: black solid 2rem;
   border-left: black solid 2rem;
-  overflow-x: hidden;
   line-height: 10rem;
   h1 {
     background: -webkit-linear-gradient(
@@ -34,7 +32,7 @@
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    letter-spacing: 20px;
+    letter-spacing: 2rem;
   }
 }
 .sideframe {
@@ -49,9 +47,8 @@
 
 .screen {
   grid-area: tscreen;
-  background: url('../../../public/images/istockphoto-1139914566-612x612.jpg')
-    no-repeat center/cover;
-  border-radius: 8px;
+  background: lightblue no-repeat center/cover;
+  border-radius: 0.8rem;
   position: absolute;
   top: 0;
   right: 0;
@@ -63,8 +60,8 @@
   & > p {
     color: white;
     position: fixed;
-    right: 20px;
-    top: 20px;
+    right: 2rem;
+    top: 2rem;
   }
 }
 
@@ -72,3 +69,17 @@
 //   animation: full 2s forwards ease-in-out;
 //   transform-origin: center;
 // }
+@media only screen and (max-width: 781px) {
+  .screen_container {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10rem 1fr;
+    grid-template-areas:
+      'tframe  '
+      'tscreen  ';
+  }
+  .frame_top {
+    border: none;
+  }
+}

@@ -24,12 +24,12 @@
       width: 50rem;
       background: white;
       z-index: 10;
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
       label {
         position: absolute;
         transition: all 0.5s;
         z-index: -2;
-        left: 10px;
+        left: 1rem;
         transform: translateY(50%);
       }
       input {
@@ -43,10 +43,10 @@
         border: none;
         outline: none;
         &:focus {
-          border: rgb(185, 2, 185) solid 5px;
+          border: rgb(185, 2, 185) solid .5rem;
         }
         &:focus + label {
-          transform: translateY(-15px);
+          transform: translateY(-1.5rem);
           color: white;
         }
       }
@@ -62,12 +62,12 @@
       position: absolute;
       background: transparent;
       outline: none;
-      padding: 3px;
+      padding: .3rem;
       &:focus {
-        border: rgb(185, 2, 185) solid 5px;
+        border: rgb(185, 2, 185) solid .5rem;
       }
       &::placeholder {
-        padding: 5px;
+        padding: .5rem;
         color: black;
       }
     }
