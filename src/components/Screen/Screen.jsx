@@ -4,13 +4,24 @@ import About from "./About/About";
 import Contact from "./Contact/Contact";
 import Home from "./Home";
 import Projects from "./Projects/Projects";
-import "../../UI/Stars.scss";
+import "../../UI/Screen/Monitor.scss"
 const Screen = ({ className, style }) => {
   const { screen, fullScreen, setFullScreen } = useContext(ScreenContext);
 
   return (
     <div className={className} style={style}>
-      <div className="stars"></div>
+      <div className="solar">
+        <div className="planet sun"></div>
+        <div className="planet mercury"></div>
+        <div className="planet venus"></div>
+        <div className="planet earth"></div>
+        <div className="planet mars"></div>
+        <div className="planet jupiter"></div>
+        <div className="planet saturn"></div>
+        <div className="planet uranus"></div>
+        <div className="planet neptune"></div>
+
+      </div>
       {fullScreen && (
         <p>
           Press{" "}

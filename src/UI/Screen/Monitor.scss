@@ -47,13 +47,8 @@
 
 .screen {
   grid-area: tscreen;
-<<<<<<< HEAD
-  background: blue;
-  border-radius: 8px;
-=======
   background: lightblue no-repeat center/cover;
   border-radius: 0.8rem;
->>>>>>> dec1ecb484a1e4f9d2d988ec222cca87a0a4b284
   position: absolute;
   top: 0;
   right: 0;
@@ -81,10 +76,68 @@
     grid-template-columns: 1fr;
     grid-template-rows: 10rem 1fr;
     grid-template-areas:
-      'tframe  '
-      'tscreen  ';
+      "tframe  "
+      "tscreen  ";
   }
   .frame_top {
     border: none;
+  }
+}
+
+.solar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  .planet {
+    border-radius: 50%;
+  }
+  .planet:not(:first-of-type) {
+    margin: 0.5rem;
+  }
+  .sun {
+    background: rgb(255, 217, 0);
+    width: 4rem;
+    height: 4rem;
+    z-index: -5;
+  }
+  .mercury {
+    width: 1rem;
+    height: 1rem;
+    background: rgb(255, 174, 0);
+  }
+  .venus {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: rgb(255, 153, 0);
+  }
+  .earth {
+    width: 1.8rem;
+    height: 1.8rem;
+    background: blue;
+  }
+  .mars {
+    width: 1.6rem;
+    height: 1.6rem;
+    background: red;
+  }
+  .jupiter {
+    width: 3rem;
+    height: 3rem;
+    background: orange;
+  }
+  .saturn {
+    width: 2.4rem;
+    height: 2.4rem;
+    background: green;
+  }
+  .uranus {
+    width: 2rem;
+    height: 2rem;
+    background: red;
+  }
+  .neptune {
+    height: 2.2rem;
+    width: 2.2rem;
+    background: salmon;
   }
 }
