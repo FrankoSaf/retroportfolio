@@ -4,14 +4,14 @@ const ScreenContext = createContext();
 const ScreenContextProvider = ({ children }) => {
   const [screen, setScreen] = useState('home');
   const [joystick, setJoystick] = useState({ direction: '', styles: {} });
-  const [fullScreen, setFullScreen] = useState(false);
+  // const [fullScreen, setFullScreen] = useState(false);
   return (
     <ScreenContext.Provider
       value={{
         screen,
         setScreen,
-        fullScreen,
-        setFullScreen,
+        // fullScreen,
+        // setFullScreen,
         joystick,
         setJoystick,
       }}

@@ -98,8 +98,8 @@ const Keyboard = () => {
           </div>
           <div className='contact'>
             <div className='circle_base'>
-              <div className='button' onClick={() => setFullScreen(true)}>
-                FULL SCREEN
+              <div className='button' onClick={() => setScreen('home')}>
+                HOME
               </div>
             </div>
           </div>

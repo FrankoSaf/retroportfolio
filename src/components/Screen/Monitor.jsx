@@ -9,7 +9,7 @@ const Monitor = ({ onKeyDown }) => {
   return (
     <div
       className='screen_container'
-      style={fullScreen ? { position: 'static' } : { position: 'relative' }}
+      style={{ position: 'relative' }}
     >
       <div
         style={fullScreen ? { zIndex: 0 } : { zIndex: 205 }}

@@ -1,41 +1,29 @@
-import React, { useContext } from "react";
-import { ScreenContext } from "../../store/ScreenContext";
-import About from "./About/About";
-import Contact from "./Contact/Contact";
-import Home from "./Home";
-import Projects from "./Projects/Projects";
-import "../../UI/Screen/Monitor.scss"
+import React, { useContext } from 'react';
+import { ScreenContext } from '../../store/ScreenContext';
+import About from './About/About';
+import Contact from './Contact/Contact';
+import Home from './Home';
+import Projects from './Projects/Projects';
+import '../../UI/Screen/Monitor.scss';
 const Screen = ({ className, style }) => {
   const { screen, fullScreen, setFullScreen } = useContext(ScreenContext);
 
   return (
     <div className={className} style={style}>
-      <div className="solar">
-        <div className="planet sun"></div>
-        <div className="planet mercury"></div>
-        <div className="planet venus"></div>
-        <div className="planet earth"></div>
-        <div className="planet mars"></div>
-        <div className="planet jupiter"></div>
-        <div className="planet saturn"></div>
-        <div className="planet uranus"></div>
-        <div className="planet neptune"></div>
-
-      </div>
-      {fullScreen && (
+      {/* {fullScreen && (
         <p>
-          Press{" "}
-          <span onClick={() => setFullScreen(false)} style={{ color: "red" }}>
+          Press{' '}
+          <span onClick={() => setFullScreen(false)} style={{ color: 'red' }}>
             here
-          </span>{" "}
+          </span>{' '}
           or hit ESC to exit full screen
         </p>
-      )}
-      {screen === "home" ? (
+      )} */}
+      {screen === 'home' ? (
         <Home />
-      ) : screen === "contact" ? (
+      ) : screen === 'contact' ? (
         <Contact />
-      ) : screen === "about" ? (
+      ) : screen === 'about' ? (
         <About />
       ) : (
         <Projects />
