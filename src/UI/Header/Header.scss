@@ -8,25 +8,64 @@
 .header_top {
   width: 100%;
   background: linear-gradient(to right, #5e1d51, #654392);
-  height: 50%;
+
+  height: 80%;
   border-bottom: 1px solid black;
-  box-shadow: 0px 20px 20px black;
-  clip-path: polygon(5% 0, 95% 0, 100% 100%, 0 100%);
+  // clip-path: polygon(5% 0, 95% 0, 100% 100%, 0 100%);
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   h2 {
     font-size: 5rem;
+    letter-spacing: 2rem;
+    color: white;
   }
 }
 .header_bottom {
   width: 100%;
   box-shadow: 0px -5px 4px black;
   background: linear-gradient(to right, #5e1d51, #654392);
-  height: 60%;
-  clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+  height: 20%;
+  clip-path: polygon(0 0, 100% 0, 94% 100%, 6% 100%);
 }
+
+.homer {
+  height: 100%;
+  width: 5rem;
+  border: black 1px solid;
+  position: relative;
+  background: yellow;
+  border-radius: 30% 30% 0 0;
+
+  &_face-eyes {
+    height: 3rem;
+    position: absolute;
+    display: flex;
+    right: 0;
+    top: 30%;
+    justify-content: flex-end;
+    &-left {
+      border: black 1px solid;
+      height: 2.5rem;
+      width: 2.5rem;
+      background: white;
+      border-radius: 50%;
+      transform: translateX(15px);
+      position: relative;
+      z-index: 1;
+    }
+    &-right {
+      border: 1px solid black;
+      height: 2.5rem;
+      width: 2.5rem;
+      background: white;
+      border-radius: 50%;
+      transform: translateX(10px);
+    }
+  }
+}
+
 @media only screen and (max-width: 781px) {
   .header_container {
     display: none;
