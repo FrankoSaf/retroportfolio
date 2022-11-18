@@ -1,6 +1,7 @@
 .card {
   min-width: 100%;
-  width: 40rem;
+  margin: 0 auto;
+
   height: 40rem;
   display: grid;
   grid-template-rows: 15rem 1fr 3rem;
@@ -8,6 +9,10 @@
     'image'
     'description'
     'link';
+  & > * {
+    width: 80%;
+    margin: 0 auto;
+  }
   &_image {
     grid-area: image;
     margin-bottom: 2rem;

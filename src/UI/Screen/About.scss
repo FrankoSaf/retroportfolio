@@ -8,7 +8,6 @@
   justify-content: center;
   flex-direction: column;
   height: 100%;
-  margin-top: 0rem;
   overflow-y: scroll;
   &::-webkit-scrollbar {
     width: 0px;
@@ -20,7 +19,9 @@
     -webkit-text-fill-color: transparent;
     font-size: 3rem;
     margin-bottom: 2rem;
-    margin-top: 2rem;
+  }
+  h3:first-of-type {
+    margin-top: 84rem;
   }
   text-align: center;
   p {
@@ -41,5 +42,19 @@
   img {
     width: 6rem;
     height: 6rem;
+  }
+}
+@media only screen and (max-width: 781px) {
+  .about_container h3:first-of-type {
+    margin-top: 30rem;
+  }
+}
+@media only screen and (max-width: 451px) {
+  .about_container h3:first-of-type {
+    margin-top: 50rem;
+  }
+  .about_container p {
+    font-size: 1.2rem;
+  
   }
 }

@@ -4,7 +4,7 @@ const Contact = () => {
   const borders = ['top', 'right', 'bottom', 'left'];
   return (
     <div className='contact-form_container'>
-      <h2>If you have any questions or inquires, send me message :)</h2>
+      <h2>If you have any questions or inquires, send me a message :)</h2>
       <form action='' className='form'>
         <div>
           <input type='text' />

@@ -11,12 +11,6 @@ const Monitor = ({ onKeyDown }) => {
       className='screen_container'
       style={{ position: 'relative' }}
     >
-      <div
-        style={fullScreen ? { zIndex: 0 } : { zIndex: 205 }}
-        className='frame_top'
-      >
-        <h1>FRANKO</h1>
-      </div>
       <Screen className={`screen ${fullScreen ? 'full-screen' : ''}`} />
     </div>
   );

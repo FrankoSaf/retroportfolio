@@ -18,19 +18,18 @@ const About = () => {
   return (
     <div className='about_container' id='innerScreen'>
       <div>
-        <h3
-          style={!fullScreen ? { marginTop: '80rem' } : { marginTop: '50rem' }}
-        >
+        <h3>
           About:
         </h3>
         <p>
-          My name is Franko. I'm a web developer, mainly focused on MERN stack,
-          from Croatia, currently residing in Germany
+          My name is Franko. I'm a Germany based web developer from Croatia, mainly focused on MERN stack.
         </p>
-        <p>I created this portfolio to showcase my full stack skills</p>
+        <p>Currently in the hunt for new opportunities and jobs, primarily for junior developer role</p>
+        <p>I created this portfolio to showcase my Frontend skills.</p>
+        <p>This portfolio is responsive, but functionality is created for desktop sized windows.</p>
       </div>
       <div>
-        <h3 style={{ marginTop: '10rem' }}>Skills:</h3>
+        <h3 style={{ marginTop: '8rem' }}>Skills:</h3>
         <div className='icons-container'>
           {icons.map((icon) => (
             <div className='icons'>
