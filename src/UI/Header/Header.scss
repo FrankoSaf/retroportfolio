@@ -17,10 +17,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  h2 {
+  h1 {
     font-size: 5rem;
-    letter-spacing: 2rem;
+    padding: 10px;
     color: white;
+    border: 10px solid red;
+    border-radius: 25px;
   }
 }
 .header_bottom {

@@ -7,9 +7,14 @@ import Projects from './Projects/Projects';
 import '../../UI/Screen/Monitor.scss';
 const Screen = ({ className, style }) => {
   const { screen, fullScreen, setFullScreen } = useContext(ScreenContext);
-
+  const stars = Array.from(Array(20).keys());
   return (
     <div className={className} style={style}>
+      <div className='night'>
+        {stars.map((star) => (
+          <span className='shooting_star'></span>
+        ))}
+      </div>
       {/* {fullScreen && (
         <p>
           Press{' '}

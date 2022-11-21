@@ -5,7 +5,8 @@ import Keyboard from './components/Keyboard/Keyboard';
 import Monitor from './components/Screen/Monitor';
 import { ScreenContext } from './store/ScreenContext';
 import { GiHamburgerMenu } from 'react-icons/gi';
-
+import { GoMarkGithub, GoMail } from 'react-icons/go';
+import { FaLinkedin } from 'react-icons/fa';
 import Navigation from './components/Navigation';
 function App() {
   const { setFullScreen, size, setNavMenu, navMenu } =
@@ -21,20 +22,27 @@ function App() {
   };
   return (
     <>
+      <div class='wave'></div>
+      <div class='wave'></div>
+      <div class='wave'></div>
+     
       {size < 781 && (
         <>
-          <GiHamburgerMenu
-            onClick={() => setNavMenu(true)}
-            style={{
-              position: 'fixed',
-              top: '15px',
-              right: '25px',
-              color: 'white',
-              zIndex: '1000',
-              width: '5rem',
-              height: '5rem',
-            }}
-          />
+          {!navMenu && (
+            <GiHamburgerMenu
+              onClick={() => setNavMenu(true)}
+              style={{
+                position: 'fixed',
+                top: '15px',
+                right: '25px',
+                color: 'white',
+                zIndex: '1000',
+                width: '5rem',
+                height: '5rem',
+                cursor: 'pointer',
+              }}
+            />
+          )}
           <Navigation />
         </>
       )}
